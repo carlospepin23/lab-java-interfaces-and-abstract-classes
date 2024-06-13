@@ -30,9 +30,9 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
-### src.CarInventorySystem.Car Inventory System
+### Car Inventory System
 
-1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `src.CarInventorySystem.Sedan`, a `src.CarInventorySystem.UtilityVehicle` or a `src.CarInventorySystem.Truck`.
+1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `Sedan`, a `UtilityVehicle` or a `Truck`.
 2. Create an abstract class named `Car` and define the following properties and behaviors:
    - `vinNumber`: a `String` representing the VIN number of the car
    - `make`: a `String` representing the make of the car
@@ -67,6 +67,14 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 3. `IntArrayList` should store numbers in an array with a length of 10 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 15.)
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
+
+//EXAMPLE OF CASES:
+
+`IntArrayList` is more efficient for managing small lists, such as a list of students in a course, because of its smaller 
+default size and 50% increase in capacity during reallocation. In contrast, `IntVector` is more suitable for managing 
+large lists, such as bank account users, because it starts with a larger default size and doubles its capacity upon 
+reallocation. If an `IntVector` is used for small lists, memory can be wasted due to its larger initial allocation and 
+its re-allocation strategy that doubles its storage, leading to inefficient use of resources.
 
 <br>
 
